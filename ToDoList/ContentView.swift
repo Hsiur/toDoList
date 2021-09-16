@@ -75,7 +75,7 @@ struct ContentView: View {
                             listOfreminders.append(newRemind)
                         }
                     }
-                    Text("hjhj")
+                    Text("Test commite")
 
                 }
                 .navigationTitle(currentgroupOfReminders)
@@ -115,33 +115,6 @@ struct ContentView: View {
         listOfreminders.move(fromOffsets: source, toOffset: destination)
     }
 }
-
-struct RemindCard: View {
-    
-    var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/).foregroundColor(.gray).padding(.all)
-            HStack{
-                Image(systemName: "circle")
-                Text("Bay a car")
-                Spacer()
-                Image(systemName: "exclamationmark.circle")
-            }.padding(.horizontal)
-        }
-        
-    }
-}
-
-// Структура создания напоминаний
-struct Category {
-    let name: String
-    let Content: Reminders
-}
-
-struct Reminders {
-    let userRemind: String
-}
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
